@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анастасия Кудашева](https://up.htmlacademy.ru/adaptive/15/user/68426).
-* Наставник: `Неизвестно`.
+* Наставник: `Нет`.
 
 ---
 
