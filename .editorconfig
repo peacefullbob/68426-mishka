@@ -1,27 +1,17 @@
+; http://editorconfig.org
+
+root = true
+
 [*]
-charset=utf-8
-end_of_line=crlf
-insert_final_newline=false
-indent_style=space
-indent_size=4
+charset = utf-8
+indent_style = space
+indent_size = 2
+end_of_line = lf
+trim_trailing_whitespace = true
+insert_final_newline = true
 
-[{*.ng,*.sht,*.html,*.shtm,*.shtml,*.htm}]
-indent_style=space
-indent_size=4
+[*.{go,py,rb,php}]
+indent_size = 4
 
-[{phpunit.xml.dist,*.jhm,*.xslt,*.xul,*.rng,*.xsl,*.xsd,*.ant,*.svg,*.tld,*.fxml,*.jrxml,*.xml,*.jnlp,*.wsdl}]
-indent_style=space
-indent_size=4
-
-[{.babelrc,.stylelintrc,jest.config,.eslintrc,*.json,*.jsb3,*.jsb2,*.bowerrc}]
-indent_style=space
-indent_size=2
-
-[{*.hphp,*.phtml,*.module,*.php,*.php5,*.php4,*.inc}]
-indent_style=space
-indent_size=4
-
-[{*.yml,*.yaml}]
-indent_style=space
-indent_size=2
-
+[*.md]
+trim_trailing_whitespace = false
