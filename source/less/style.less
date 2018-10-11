@@ -10,6 +10,53 @@
   src: url("../fonts/opensansbold.woff2") format("woff2");
 }
 
+@font-size: 15px;
+@font-color: #444444;
+@title-color: #000000;
+@main-color: #56c3b2;
+@font-regular: "Open Sans", sans-serif;
+@font-bold: "OPen Sans Bold", sans-serif;
+
+
 body {
-  font-family: "Open Sans", serif;
+  font-family: @font-regular;
+  font-size: @font-size;
+  line-height: @font-size + 9px;
+  color: @font-color;
 }
+
+h2,
+h1,
+h3,
+h4,
+h5,
+h6 {
+  color: @title-color;
+  font-family: @font-bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@import "header";
+@import "main-nav";
+@import "site-list";
+@import "main";
+@import "page-title";
+@import "catalog-main";
+@import "week-offer";
+@import "button";
+@import "features";
+@import "feedback";
+@import "slider";
+@import "contact";
+@import "footer";
+@import "social";
+@import "modal";
