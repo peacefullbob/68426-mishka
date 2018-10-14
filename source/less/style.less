@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff") format("woff");
+  src: url("../fonts/opensans.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../fonts/opensansbold.woff") format("woff");
+  src: url("../fonts/opensansbold.woff2") format("woff2");
+}
+
+@font-size: 15px;
+@font-color: #444444;
+@title-color: #000000;
+@main-color: #56c3b2;
+@grey-color: #f1f1f1;
+@font-regular: "Open Sans", sans-serif;
+@font-bold: "OPen Sans Bold", sans-serif;
+
+
+body {
+  font-family: @font-regular;
+  font-size: @font-size;
+  line-height: @font-size + 9px;
+  color: @font-color;
+  margin: 0;
+}
+
+h2,
+h1,
+h3,
+h4,
+h5,
+h6 {
+  color: @title-color;
+  font-family: @font-bold;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+@import "header";
+@import "main-nav";
+@import "site-list";
+@import "main";
+@import "page-title";
+@import "catalog-main";
+@import "week-offer";
+@import "button";
+@import "features";
+@import "features-list";
+@import "feedback";
+@import "contact";
+@import "catalog-wrapper";
+@import "video";
+@import "order";
+@import "form";
+@import "add-form";
+@import "buy-block";
+@import "characteristic";
+@import "product-item";
+@import "site-list";
+@import "footer";
+@import "social";
+@import "developers";
+@import "modal";
