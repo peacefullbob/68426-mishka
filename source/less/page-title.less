@@ -1,4 +1,22 @@
 .page-title {
+  background-color: @grey-color;
   font-size: @font-size + 12px;
   line-height: @font-size + 15px;
+  text-align: center;
+
+  &--img-bg {
+    background-image: url("../img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 75px 30px 120px 30px;
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/hero-tablet@1x.jpg");
+      padding: 160px 140px 380px 140px;
+    }
+  }
+
+  &--smart-bg {
+    padding: 75px 30px 80px 30px;
+  }
 }

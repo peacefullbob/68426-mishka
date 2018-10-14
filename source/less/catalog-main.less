@@ -2,5 +2,26 @@
   font-family: @font-bold;
   font-size: @font-size + 4px;
   line-height: @font-size + 5px;
-  padding: 0 30px;
+
+  &__list {
+    .reset-list();
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  &__item {
+    background: @main-color;
+    padding: 30px;
+    @media (min-width: @tablet-width) {
+      padding: 40px;
+      flex-grow: 1;
+    }
+  }
+
+  &__link {
+    color: @white;
+  }
 }
