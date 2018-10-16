@@ -4,9 +4,29 @@
   &__title {
     font-size: @font-size + 10px;
     line-height: @font-size + 15px;
+    margin-bottom: 30px;
+  }
+
+  &__main {
+    line-height: @font-size + 15px;
+    margin-bottom: 30px;
   }
 
   &__author {
     font-family: @font-bold;
+    color: @title-color;
+    margin-bottom: 10px;
+  }
+
+  &__toggles {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    .button-reset();
+    padding: 15px 80px;
+    border: 2px solid @font-color;
+    margin-bottom: 30px;
   }
 }
