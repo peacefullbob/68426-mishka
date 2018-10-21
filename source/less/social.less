@@ -1,3 +1,22 @@
 .social {
-  padding: 0 30px;
+  &__item {
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+
+    &--insta {
+      background: url("../img/icon-insta.svg") no-repeat center;
+    }
+
+    &--fb {
+      background: url("../img/icon-fb.svg") no-repeat center;
+    }
+
+    &--tw {
+      background: url("../img/icon-twitter.svg") no-repeat center;
+    }
+  }
+  &__item:last-child {
+    margin-right: 0;
+  }
 }

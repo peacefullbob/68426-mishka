@@ -14,28 +14,69 @@
 
   &__item {
 
-    &--flower::before {
-      background: url("../img/icon-feature-flower.svg") no-repeat center top;
+    @media (min-width: 768px) {
+      width: 40%;
+      margin-right: 10%;
     }
 
-    &--money::before {
-      background: url("../img/icon-feature-money.svg") no-repeat center top;
+    &--flower {
+      &::before {
+        background: url("../img/icon-feature-flower.svg") no-repeat center top;
+      }
+
+      @media (min-width: @tablet-width) {
+        order: 1;
+      }
     }
 
-    &--likes::before {
-      background: url("../img/icon-feature-heart.svg") no-repeat center top;
+    &--money {
+      &::before {
+        background: url("../img/icon-feature-money.svg") no-repeat center top;
+      }
+
+      @media (min-width: @tablet-width) {
+        order: 3;
+      }
     }
 
-    &--love::before {
-      background: url("../img/icon-feature-ball.svg") no-repeat center top;
+    &--likes {
+      &::before {
+        background: url("../img/icon-feature-heart.svg") no-repeat center top;
+      }
+
+      @media (min-width: @tablet-width) {
+        order: 5;
+      }
     }
 
-    &--russia::before {
-      background: url("../img/icon-feature-rocket.svg") no-repeat center top;
+    &--love {
+      &::before {
+        background: url("../img/icon-feature-ball.svg") no-repeat center top;
+      }
+
+      @media (min-width: @tablet-width) {
+        order: 2;
+      }
     }
 
-    &--gift::before {
-      background: url("../img/icon-feature-gift.svg") no-repeat center top;
+    &--russia {
+      &::before {
+        background: url("../img/icon-feature-rocket.svg") no-repeat center top;
+      }
+
+      @media (min-width: @tablet-width) {
+        order: 4;
+      }
+    }
+
+    &--gift {
+      &::before {
+        background: url("../img/icon-feature-gift.svg") no-repeat center top;
+      }
+
+      @media (min-width: @tablet-width) {
+        order: 6;
+      }
     }
   }
 }

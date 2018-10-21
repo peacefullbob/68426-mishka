@@ -12,21 +12,26 @@
     <img src="img/logo-mobile.svg" alt="Магазин «Мишка»" width="95" height="40" class="header__logo-image">
   </a>
   <nav class="main-nav">
-    <button class="main-nav__nav-toggle"></button>
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item"><a class="site-list__link" href="/catalog.html">Каталог товаров</a></li>
-        <li class="site-list__item"><a class="site-list__link" href="/form.html">Вязание на заказ</a></li>
-        <li class="site-list__item"><a class="site-list__link site-list__link--logo-search" href="#">Поиск по
-          сайту</a></li>
-        <li class="site-list__item"><a class="site-list__link site-list__link--logo-basket" href="#">Корзина:
-          пока пуста</a></li>
-      </ul>
-    </div>
+    <ul class="main-nav__list site-list">
+      <li class="site-list__item"><a class="site-list__link" href="/catalog.html">Каталог товаров</a></li>
+      <li class="site-list__item"><a class="site-list__link" href="/form.html">Вязание на заказ</a></li>
+      <li class="site-list__item"><a class="site-list__link" href="#">Новые поступления</a></li>
+      <li class="site-list__item"><a class="site-list__link" href="#">Распродажа</a></li>
+    </ul>
+    <ul class="main-nav__list buttons-list">
+      <li class="buttons-list__item buttons-list__item--search"><a class="buttons-list__link buttons-list__link--search"
+                                                                   href="#">Поиск по
+        сайту</a></li>
+      <li class="buttons-list__item buttons-list__item--basket"><a
+        class="buttons-list__link buttons-list__link--logo-basket" href="#">Корзина:
+        пока пуста</a></li>
+    </ul>
   </nav>
+  <button class="header__nav-toggle"></button>
+  <span class="header__text">Бесплатная доставка по России</span>
 </header>
 <main class="main">
-  <h1 class="page-title page-title--smart-bg">Каталог товаров</h1>
+  <h1 class="page-title page-title--smart-bg">Вязание на заказ</h1>
   <section class="order">
     <p class="order__description">
       Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
