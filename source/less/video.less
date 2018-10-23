@@ -1,8 +1,43 @@
 .video {
   padding: 0 30px;
 
+  @media (min-width: @tablet-width) {
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
   &__title {
     font-size: @font-size + 2px;
     line-height: @font-size + 9px;
+
+    @media (min-width: @tablet-width) {
+      order: 2;
+      font-size: @font-size + 5px;
+      line-height: @font-size + 9px;
+    }
+  }
+
+  &__image {
+    @media (min-width: @tablet-width) {
+      order: 1;
+    }
+  }
+
+  &__button {
+    color: @font-color;
+    display: block;
+    margin: 0 auto 50px auto;
+    padding: 15px 30px;
+    background: #ffffff;
+    border: 2px solid #444444;
+    box-shadow: none;
+    max-width: 140px;
+    text-align: center;
+
+    @media (min-width: @tablet-width) {
+      max-width: none;
+      order: 4;
+    }
   }
 }
