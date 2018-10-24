@@ -1,5 +1,37 @@
 .form {
+  @media (min-width: @tablet-width) {
+    position: relative;
+  }
+
   &__group {
     font-family: @font-bold;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: @tablet-width) {
+      margin-left: 165px;
+    }
+  }
+
+  &__group-title {
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  &__button {
+    border: 2px solid @font-color;
+    color: @font-color;
+    padding: 20px 30px;
+    background: #ffffff;
+  }
+
+  &__small-text {
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
   }
 }
