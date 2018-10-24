@@ -1,12 +1,64 @@
 .feedback {
   padding: 0 30px;
+  margin-bottom: 30px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 50px;
+    padding: 50px;
+    position: relative;
+    background: url("../img/review@1x.jpg") no-repeat left;
+  }
 
   &__title {
     font-size: @font-size + 10px;
     line-height: @font-size + 15px;
+    margin-bottom: 30px;
+
+    @media (min-width: 768px) {
+      font-size: @font-size + 28px;
+      line-height: @font-size + 35px;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__main {
+    line-height: @font-size + 15px;
+    margin-bottom: 30px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 50px;
+    }
   }
 
   &__author {
     font-family: @font-bold;
+    color: @title-color;
+    margin-bottom: 10px;
+  }
+
+  &__toggles {
+    margin-bottom: 30px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+      position: absolute;
+      right: 50px;
+      bottom: 50px;
+    }
+  }
+
+  &__button {
+    .button-reset();
+    display: block;
+    padding: 15px 80px;
+    border: 2px solid @font-color;
+    margin: 0 auto 30px auto;
+
+    @media (min-width: 768px) {
+      padding: 15px 40px;
+      position: absolute;
+      top: 50px;
+      right: 50px;
+    }
   }
 }

@@ -2,4 +2,34 @@
   font-family: @font-bold;
   font-size: @font-size + 2px;
   line-height: @font-size + 7px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+
+  &__buttons-list {
+    @media (min-width: @tablet-width) {
+      order: -1;
+      display: flex;
+      flex-direction: row;
+    }
+
+    @media (min-width: @desktop-width) {
+      order: 1;
+    }
+  }
+
+  &__site-list {
+    @media (min-width: @tablet-width) {
+      padding: 0;
+      display: flex;
+      position: absolute;
+      left: 50px;
+      top: 110px;
+    }
+
+    @media (min-width: @desktop-width) {
+      position: static;
+    }
+  }
 }

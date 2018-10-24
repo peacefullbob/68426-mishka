@@ -1,7 +1,99 @@
 .contact {
-  padding: 0 30px;
+  margin-top: 30px;
+
+  @media (min-width: @desktop-width) {
+    padding: 0 100px;
+    position: relative;
+  }
 
   &__button {
+    display: block;
+    margin: 0 auto 50px auto;
+    padding: 15px 50px;
+    background: @white;
+    border: 2px solid @font-color;
+    box-shadow: none;
+  }
+
+  &__title {
     padding: 0 30px;
+    font-size: @font-size + 3px;
+    line-height: @font-size + 15px;
+    margin-bottom: 40px;
+
+    @media (min-width: @tablet-width) {
+      font-size: @font-size + 28px;
+      line-height: @font-size + 35px;
+      margin-bottom: 50px;
+      padding: 0 50px;
+    }
+  }
+
+  &__wrapper {
+    width: 300px;
+    margin-left: 175px;
+  }
+
+  &__table {
+    padding: 0 0 0 30px;
+    margin-bottom: 30px;
+
+    @media (min-width: @tablet-width) {
+      width: 100%;
+      padding: 0 50px;
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 0;
+      width: 300px;
+    }
+  }
+
+  &__table-body {
+    @media (min-width: @tablet-width) {
+      display: flex;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: table;
+    }
+  }
+
+  &__table-row:first-child {
+    margin-bottom: 30px;
+
+    @media (min-width: @tablet-width) {
+      margin-right: 10%;
+      width: 40%;
+    }
+  }
+
+  &__table-cell {
+    vertical-align: top;
+    padding-right: 25px;
+    padding-bottom: 30px;
+  }
+
+  &__map {
+    margin-bottom: 30px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: @desktop-width) {
+      position: absolute;
+      right: 100px;
+      top: 0;
+    }
+  }
+
+  &__map-image {
+    width: 100%;
+
+    @media (min-width: @desktop-width) {
+      width: auto;
+    }
   }
 }

@@ -8,27 +8,33 @@
 </head>
 <body>
 <header class="header">
-  <a href="/" class="header__logo">
-    <img src="img/logo-mobile.svg" alt="Магазин «Мишка»" width="95" height="40" class="header__logo-image">
-  </a>
   <nav class="main-nav">
-    <button class="main-nav__nav-toggle"></button>
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item"><a class="site-list__link" href="/catalog.html">Каталог товаров</a></li>
-        <li class="site-list__item"><a class="site-list__link" href="/form.html">Вязание на заказ</a></li>
-        <li class="site-list__item"><a class="site-list__link site-list__link--logo-search" href="#">Поиск по
-          сайту</a></li>
-        <li class="site-list__item"><a class="site-list__link site-list__link--logo-basket" href="#">Корзина:
-          пока пуста</a></li>
-      </ul>
-    </div>
+    <a href="/" class="header__logo">
+      <picture>
+        <source srcset="img/logo-desktop.svg" media="(min-width: 1024px)">
+        <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+        <img src="img/logo-mobile.svg" alt="Магазин «Мишка»" class="header__logo-image">
+      </picture>
+    </a>
+    <ul class="main-nav__site-list site-list">
+      <li class="site-list__item"><a class="site-list__link" href="/catalog.html">Каталог товаров</a></li>
+      <li class="site-list__item"><a class="site-list__link" href="/form.html">Вязание на заказ</a></li>
+      <li class="site-list__item"><a class="site-list__link" href="#">Новые поступления</a></li>
+      <li class="site-list__item"><a class="site-list__link" href="#">Распродажа</a></li>
+    </ul>
+    <ul class="main-nav__buttons-list buttons-list">
+      <li class="buttons-list__item buttons-list__item--search"><a class="buttons-list__link buttons-list__link--search" href="#">Поиск по
+        сайту</a></li>
+      <li class="buttons-list__item buttons-list__item--basket"><a
+        class="buttons-list__link buttons-list__link--logo-basket" href="#">Корзина:
+        пока пуста</a></li>
+    </ul>
   </nav>
+  <button class="header__nav-toggle"></button>
+  <span class="header__text">Бесплатная доставка по России</span>
 </header>
 <main class="main">
-  <div class="main__page-title">
-    <h1 class="page-title">Каталог товаров</h1>
-  </div>
+  <h1 class="page-title page-title--smart-bg">Вязание на заказ</h1>
   <section class="order">
     <p class="order__description">
       Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
@@ -51,9 +57,9 @@
       </fieldset>
       <fieldset class="form__group">
         <legend class="form__group-title">ФИО</legend>
-        <label for="name1"><input class="form__group-item form__group-item--text" required placeholder="Введите ваше имя*" id="name1" type="text">Имя:</label>
-        <label for="name2"><input class="form__group-item form__group-item--text" required placeholder="Укажите фамилию*" id="name2" type="text">Фамилия:</label>
-        <label for="name3"><input class="form__group-item form__group-item--text" placeholder="Отчество, если желаете" id="name3" type="text">Отчество:</label>
+        <label for="name1">Имя:<input class="form__group-item form__group-item--text" required placeholder="Введите ваше имя*" id="name1" type="text"></label>
+        <label for="name2">Фамилия:<input class="form__group-item form__group-item--text" required placeholder="Укажите фамилию*" id="name2" type="text"></label>
+        <label for="name3">Отчество:<input class="form__group-item form__group-item--text" placeholder="Отчество, если желаете" id="name3" type="text"></label>
       </fieldset>
       <fieldset class="form__group">
         <legend class="form__group-title">Тел</legend>
@@ -67,18 +73,23 @@
         <legend class="form__group-title">Доп</legend>
         <label for="message"><textarea class="form__group-item form__group-item--message" placeholder="Опишите все ваши пожелания к заказу" id="message"></textarea></label>
       </fieldset>
-      <small>*Поля обязательны для заполнения</small>
-      <button class="button form__button" type="submit">Отправить</button>
+      <small class="form__small-text">*Поля обязательны для заполнения</small>
+      <button class="button form__button" type="submit">Отправить заказ</button>
     </form>
   </section>
 </main>
 <footer class="footer">
+  <a href="/" class="footer__logo">
+    <img src="img/logo-footer.svg" alt="Магазин «Мишка»" width="95" height="40" class="header__logo-image">
+  </a>
   <div class="footer__social social">
     <div class="social__item social__item--insta"></div>
     <div class="social__item social__item--fb"></div>
     <div class="social__item social__item--tw"></div>
   </div>
-  <div class="footer__developers developers">Разработано <a class="developers__logo" href="https://htmlacademy.ru/"></a></div>
+  <div class="footer__developers developers">Разработано <a class="developers__logo" title="HTML Academy: интерактивные онлайн-курсы по HTML, CSS и JavaScript" href="https://htmlacademy.ru/"><img
+    src="../img/logo-htmlacademy.svg" alt=""></a>
+  </div>
 </footer>
 </body>
 </html>

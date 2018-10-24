@@ -1,6 +1,81 @@
 .features-list {
-  &__item {
+  &__title {
     font-size: @font-size + 2px;
     line-height: @font-size + 5px;
+    margin-bottom: 30px;
+  }
+
+  &__item::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+  }
+
+  &__item {
+    @media (min-width: 768px) {
+      width: 40%;
+      margin-right: 10%;
+    }
+
+    &--flower {
+      &::before {
+        background: url("../img/icon-feature-flower.svg") no-repeat center top;
+      }
+
+      @media (min-width: @tablet-width) {
+        order: 1;
+      }
+    }
+
+    &--money {
+      &::before {
+        background: url("../img/icon-feature-money.svg") no-repeat center top;
+      }
+
+      @media (min-width: @tablet-width) {
+        order: 3;
+      }
+    }
+
+    &--likes {
+      &::before {
+        background: url("../img/icon-feature-heart.svg") no-repeat center top;
+      }
+
+      @media (min-width: @tablet-width) {
+        order: 5;
+      }
+    }
+
+    &--love {
+      &::before {
+        background: url("../img/icon-feature-ball.svg") no-repeat center top;
+      }
+
+      @media (min-width: @tablet-width) {
+        order: 2;
+      }
+    }
+
+    &--russia {
+      &::before {
+        background: url("../img/icon-feature-rocket.svg") no-repeat center top;
+      }
+
+      @media (min-width: @tablet-width) {
+        order: 4;
+      }
+    }
+
+    &--gift {
+      &::before {
+        background: url("../img/icon-feature-gift.svg") no-repeat center top;
+      }
+
+      @media (min-width: @tablet-width) {
+        order: 6;
+      }
+    }
   }
 }

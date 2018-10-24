@@ -1,3 +1,12 @@
 .site-list {
+  .reset-list();
   padding: 0 30px;
+
+  &__item:nth-child(n+3) {
+    display: none;
+
+    @media (min-width: @desktop-width) {
+      display: block;
+    }
+  }
 }

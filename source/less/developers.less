@@ -1,7 +1,16 @@
 .developers {
   font-family: @font-bold;
   font-size: @font-size + 4px;
-  line-height: @font-size  +3px;
+  line-height: @font-size +3px;
   color: @title-color;
-  padding: 0 30px;
+  padding: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    display: flex;
+  }
+
+  &__logo {
+    margin-left: 30px;
+  }
 }
