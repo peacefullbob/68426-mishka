@@ -1,7 +1,7 @@
 .slider {
   &__list {
     .reset-list();
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 
     @media (min-width: 768px) {
       margin-bottom: 0;
@@ -11,7 +11,18 @@
   &__button {
     .button-reset();
     padding: 25px 65px;
-    border: 1px solid @grey-color;
+    border-top: 1px solid @grey-color;
+    border-bottom: 1px solid @grey-color;
+    border-left: 1px solid @grey-color;
+
+    &--prev {
+      background: url("../img/icon-left-arrow.svg") no-repeat center;
+    }
+
+    &--next {
+      background: url("../img/icon-right-arrow.svg") no-repeat center;
+      border-right: 1px solid @grey-color;
+    }
   }
 
   &__toggles {

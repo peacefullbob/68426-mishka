@@ -1,17 +1,18 @@
 .header {
   display: flex;
   flex-direction: column;
-  align-items: center;
   position: relative;
 
   &__logo {
-    width: 95px;
-    padding: 20px 0;
+    display: block;
+    text-align: center;
+    padding: 24px 0 17px 0;
+    border-bottom: 1px solid @grey-color;
 
     @media (min-width: @tablet-width) {
-      width: 300px;
-      padding: 0;
-      order: -1;
+      border-bottom: none;
+      padding-top: 20px;
+      order: 1;
     }
 
     @media (min-width: @desktop-width) {
@@ -19,10 +20,30 @@
     }
   }
 
+  &__logo-image {
+    width: 85px;
+    height: 35px;
+    display: inline-block;
+
+    @media (min-width: @tablet-width) {
+      width: 115px;
+      height: 50px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 160px;
+      height: 80px;
+    }
+  }
+
   &__nav-toggle {
     position: absolute;
-    top: 20px;
+    top: 30px;
     right: 30px;
+    border: none;
+    width: 22px;
+    height: 22px;
+    background: url("../img/icon-menu-close.svg") no-repeat center;
 
     @media (min-width: @tablet-width) {
       display: none;
@@ -41,9 +62,6 @@
   }
 
   @media (min-width: @tablet-width) {
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    padding: 20px 50px;
+    padding: 0 50px;
   }
 }

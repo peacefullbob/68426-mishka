@@ -8,10 +8,11 @@
   }
 
   &__title-wrapper {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
     @media (min-width: @tablet-width) {
       display: flex;
+      margin-bottom: 50px;
     }
 
     @media (min-width: @desktop-width) {
@@ -22,7 +23,7 @@
   &__title {
     font-size: @font-size + 10px;
     line-height: @font-size + 15px;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
 
     @media (min-width: @tablet-width) {
       font-size: @font-size + 28px;
@@ -56,14 +57,14 @@
       width: 40%;
     }
 
-    @media (min-width: @tablet-width) {
+    @media (min-width: @desktop-width) {
       width: 290px;
       margin-left: 175px;
     }
   }
 
   &__description {
-    margin-bottom: 30px;
+    margin-bottom: 18px;
 
     @media (min-width: @tablet-width) {
       margin-bottom: 50px;
@@ -72,7 +73,7 @@
 
   &__characteristic {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 
     @media (min-width: @tablet-width) {
       margin-bottom: 50px;
@@ -80,7 +81,8 @@
   }
 
   &__image {
-    margin-bottom: 30px;
+    margin-bottom: 22px;
+    display: block;
 
     @media (min-width: @tablet-width) {
       position: absolute;
@@ -88,7 +90,7 @@
       right: 50px;
     }
 
-    @media (min-width: @tablet-width) {
+    @media (min-width: @desktop-width) {
       position: absolute;
       top: -60px;
       right: 100px;
@@ -107,10 +109,9 @@
   &__button {
     color: @font-color;
     font-family: @font-bold;
-    padding: 15px 80px;
+    padding: 15px 84px;
     border: 2px solid @font-color;
     background: @white;
-    margin-bottom: 30px;
 
     @media (min-width: @tablet-width) {
       display: block;

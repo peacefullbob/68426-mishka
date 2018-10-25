@@ -1,12 +1,33 @@
 .site-list {
   .reset-list();
-  padding: 0 30px;
+
+  &__item {
+    display: block;
+    padding: 27px 0 27px 76px;
+    border-bottom: 1px solid @grey-color;
+
+    @media (min-width: @tablet-width) {
+      border-bottom: none;
+      padding: 0 35px 0 0;
+    }
+  }
 
   &__item:nth-child(n+3) {
     display: none;
 
     @media (min-width: @desktop-width) {
       display: block;
+    }
+  }
+
+  &__link {
+    font-size: @font-size + 2px;
+    line-height: @font-size + 9px;
+    color: @title-color;
+    position: relative;
+
+    @media (min-width: @tablet-width) {
+      font-size: @font-size;
     }
   }
 }

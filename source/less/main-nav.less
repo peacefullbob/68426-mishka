@@ -5,11 +5,12 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
+    justify-content: space-between;
   }
 
   &__buttons-list {
     @media (min-width: @tablet-width) {
-      order: -1;
+      order: 2;
       display: flex;
       flex-direction: row;
     }
@@ -26,6 +27,7 @@
       position: absolute;
       left: 50px;
       top: 110px;
+      order: 3;
     }
 
     @media (min-width: @desktop-width) {
