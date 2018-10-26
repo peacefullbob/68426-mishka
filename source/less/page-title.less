@@ -1,23 +1,17 @@
 .page-title {
-  background-color: @grey-color;
   font-size: @font-size + 12px;
   line-height: @font-size + 15px;
   text-align: center;
 
   &--img-bg {
-    background-image: url("../img/hero-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: top center;
-    padding: 70px 30px 120px 30px;
+    padding: 70px 30px 0 30px;
 
     @media (min-width: @tablet-width) {
-      background-image: url("../img/hero-tablet@1x.jpg");
-      padding: 160px 140px 380px 140px;
+      padding: 155px 115px 0 115px;
     }
 
     @media (min-width: @desktop-width) {
-      background-image: url("../img/hero-desktop@1x.jpg");
-      padding: 160px 140px 380px 140px;
+      padding: 160px 140px 0 140px;
     }
   }
 
@@ -32,6 +26,7 @@
   }
 
   &--smart-bg {
+    background-color: @grey-color;
     padding: 75px 30px 80px 30px;
   }
 }

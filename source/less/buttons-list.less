@@ -12,11 +12,15 @@
     }
 
     &--basket {
-      padding: 30px 0 30px 100px;
+      @media (min-width: @tablet-width) {
+        padding: 30px 0 30px 84px;
+      }
     }
 
     &--search {
-      padding: 35px 30px 30px 30px;
+      @media (min-width: @tablet-width) {
+        padding: 35px 30px 30px 30px;
+      }
     }
   }
 
@@ -58,7 +62,7 @@
       background: url("../img/icon-cart.svg") no-repeat center;
 
       @media (min-width: @tablet-width) {
-        left: -54px;
+        left: -48px;
       }
     }
   }

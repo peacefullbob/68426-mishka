@@ -8,11 +8,18 @@
     padding: 50px;
   }
 
+  &__item {
+    @media (min-width: @tablet-width) {
+      width: 30%;
+    }
+  }
+
   &__logo {
     display: none;
 
     @media (min-width: @tablet-width) {
-      display: block;
+      display: flex;
+      align-items: center;
       padding: 0;
     }
   }
@@ -25,6 +32,7 @@
 
     @media (min-width: @tablet-width) {
       padding: 0;
+      align-items: center;
       border-bottom: none;
     }
   }

@@ -3,6 +3,12 @@
     font-size: @font-size + 2px;
     line-height: @font-size + 5px;
     margin-bottom: 28px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 57px;
+      font-size: @font-size + 5px;
+      line-height: @font-size + 7px;
+    }
   }
 
   &__item::before {
@@ -14,9 +20,9 @@
   }
 
   &__item {
-    @media (min-width: 768px) {
-      width: 40%;
-      margin-right: 10%;
+    @media (min-width: @tablet-width) {
+      width: 45%;
+      margin-right: 5%;
     }
 
     &--flower {

@@ -3,6 +3,10 @@
   position: relative;
 
   @media (min-width: @tablet-width) {
+    padding: 0 50px;
+  }
+
+  @media (min-width: @desktop-width) {
     padding: 0 100px 50px 100px;
     margin-bottom: 50px;
   }
@@ -12,7 +16,7 @@
 
     @media (min-width: @tablet-width) {
       display: flex;
-      margin-bottom: 50px;
+      margin-bottom: 40px;
     }
 
     @media (min-width: @desktop-width) {
@@ -45,6 +49,9 @@
     line-height: @font-size + 5px;
     text-transform: uppercase;
     color: @main-color;
+    width: 130px;
+    padding: 10px 0;
+    text-align: center;
 
     @media (min-width: @desktop-width) {
       order: 1;
@@ -54,7 +61,7 @@
 
   &__characteristics-wrapper {
     @media (min-width: @tablet-width) {
-      width: 40%;
+      width: 44%;
     }
 
     @media (min-width: @desktop-width) {
@@ -67,7 +74,9 @@
     margin-bottom: 18px;
 
     @media (min-width: @tablet-width) {
-      margin-bottom: 50px;
+      line-height: @font-size + 15px;
+      font-size: @font-size + 2px;
+      margin-bottom: 35px;
     }
   }
 
@@ -76,7 +85,7 @@
     margin-bottom: 25px;
 
     @media (min-width: @tablet-width) {
-      margin-bottom: 50px;
+      margin-bottom: 54px;
     }
   }
 
@@ -104,6 +113,12 @@
     line-height: @font-size + 2px;
     text-align: center;
     margin-bottom: 30px;
+
+    @media (min-width: @tablet-width) {
+      font-size: @font-size + 5px;
+      line-height: @font-size + 9px;
+      margin-bottom: 34px;
+    }
   }
 
   &__button {
@@ -114,6 +129,7 @@
     background: @white;
 
     @media (min-width: @tablet-width) {
+      padding: 15px 100px;
       display: block;
       margin: 0 auto;
     }

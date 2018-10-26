@@ -2,8 +2,8 @@
   padding: 0 30px;
 
   @media (min-width: 768px) {
-    margin-bottom: 50px;
-    padding: 50px;
+    margin-bottom: 67px;
+    padding: 75px 50px 50px 50px;
     position: relative;
     background: url("../img/review@1x.jpg") no-repeat left;
   }
@@ -20,30 +20,31 @@
     }
   }
 
+  &__item {
+    @media (min-width: @tablet-width) {
+      font-size: @font-size + 2px;
+    }
+  }
+
   &__main {
     line-height: @font-size + 15px;
     margin-bottom: 28px;
 
-    @media (min-width: 768px) {
-      margin-bottom: 50px;
+    @media (min-width: @tablet-width) {
+      margin-bottom: 58px;
     }
   }
 
   &__author {
     font-family: @font-bold;
-    font-size: @font-size + 2px;
     color: @title-color;
     margin-bottom: 5px;
-  }
-
-  &__author-link {
-    font-size: @font-size + 2px;
   }
 
   &__toggles {
     margin-bottom: 39px;
 
-    @media (min-width: 768px) {
+    @media (min-width: @tablet-width) {
       margin-bottom: 0;
       position: absolute;
       right: 50px;
@@ -59,9 +60,9 @@
     margin: 0 auto;
 
     @media (min-width: 768px) {
-      padding: 15px 40px;
+      padding: 14px 37px;
       position: absolute;
-      top: 50px;
+      top: 80px;
       right: 50px;
     }
   }
