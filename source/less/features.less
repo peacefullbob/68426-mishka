@@ -1,8 +1,12 @@
 .features {
   padding: 0 30px;
 
-  @media (min-width: 768px) {
+  @media (min-width: @tablet-width) {
     padding: 0 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 275px;
   }
 
   &__title {
@@ -10,10 +14,15 @@
     line-height: @font-size + 15px;
     margin-bottom: 30px;
 
-    @media (min-width: 768px) {
+    @media (min-width: @tablet-width) {
       font-size: @font-size + 28px;
       line-height: @font-size + 35px;
       margin-bottom: 50px;
+    }
+
+    @media (min-width: @desktop-width) {
+      font-size: @font-size + 38px;
+      line-height: @font-size + 42px;
     }
   }
 

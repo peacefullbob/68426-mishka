@@ -10,13 +10,23 @@
       border-bottom: none;
       padding: 0 35px 0 0;
     }
-  }
-
-  &__item:nth-child(n+3) {
-    display: none;
 
     @media (min-width: @desktop-width) {
-      display: block;
+      padding: 35px;
+      border-right: 1px solid #f1f1f1;
+    }
+
+    &:first-child {
+      @media (min-width: @desktop-width) {
+        padding-left: 0;
+      }
+    }
+
+    &:last-child {
+      @media (min-width: @desktop-width) {
+        padding-right: 0;
+        border-right: 0;
+      }
     }
   }
 
@@ -28,6 +38,11 @@
 
     @media (min-width: @tablet-width) {
       font-size: @font-size;
+    }
+
+    @media (min-width: @desktop-width) {
+      font-size: @font-size + 2px;
+      line-height: @font-size + 9px;
     }
   }
 }

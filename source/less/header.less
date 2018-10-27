@@ -3,6 +3,16 @@
   flex-direction: column;
   position: relative;
 
+  @media (min-width: @tablet-width) {
+    padding: 0 50px;
+    border-bottom: 1px solid @grey-color;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 90px;
+    padding: 0 100px;
+  }
+
   &__logo {
     display: block;
     text-align: center;
@@ -16,7 +26,14 @@
     }
 
     @media (min-width: @desktop-width) {
-      order: 1;
+      order: 2;
+      padding-top: 30px;
+    }
+  }
+
+  &__main-nav {
+    @media (min-width: @desktop-width) {
+      height: 90px;
     }
   }
 
@@ -58,10 +75,12 @@
       position: absolute;
       top: 105px;
       right: 50px;
+      z-index: 1;
     }
-  }
 
-  @media (min-width: @tablet-width) {
-    padding: 0 50px;
+    @media (min-width: @desktop-width) {
+      top: 108px;
+      right: 100px;
+    }
   }
 }

@@ -1,4 +1,19 @@
 .buy-block {
   font-family: @font-bold;
   color: @title-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: @font-size + 2px;
+  }
+
+  &__price {
+    display: block;
+    margin-left: 25px;
+    padding-top: 20px;
+
+    @media (min-width: @tablet-width) {
+      margin-left: 0;
+      border-top: 1px solid @grey-color;
+    }
+  }
 }

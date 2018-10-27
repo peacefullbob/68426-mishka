@@ -3,67 +3,98 @@
 
   @media (min-width: @tablet-width) {
     padding: 0 50px;
-    display: flex;
-    flex-direction: column;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     position: relative;
-    flex-direction: row;
-    justify-content: flex-end;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    border: 1px solid @grey-color;
   }
 
   &__wrapper {
+    border: 1px solid @grey-color;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+      flex-direction: column;
+    }
+
     @media (min-width: @desktop-width) {
+      display: block;
       width: 235px;
-      padding: 0 80px;
+      border: none;
     }
   }
 
   &__title {
+    padding-top: 30px;
     font-size: @font-size + 2px;
     line-height: @font-size + 9px;
+    margin-left: 90px;
+    margin-bottom: 30px;
 
     @media (min-width: @tablet-width) {
       order: 2;
       font-size: @font-size + 5px;
       line-height: @font-size + 9px;
+      margin-left: 107px;
+      margin-bottom: 33px;
     }
 
     @media (min-width: @desktop-width) {
-      margin-top: 100px;
-      margin-bottom: 50px;
+      margin-left: 0;
+      margin-bottom: 30px;
+      margin-top: 60px;
     }
   }
 
   &__description {
     font-size: @font-size - 2px;
+    padding: 0 40px 25px 35px;
 
     @media (min-width: @tablet-width) {
       order: 3;
       font-size: @font-size;
       line-height: @font-size + 15px;
-      margin-bottom: 50px;
+      margin-bottom: 10px;
+      padding: 0 40px 25px 40px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 55px;
+      padding: 0;
     }
   }
 
   &__image {
+    display: block;
+    margin-bottom: 5px;
+
     @media (min-width: @tablet-width) {
       order: 1;
     }
 
-    @media (min-width: @tablet-width) {
+    @media (min-width: @desktop-width) {
       position: absolute;
-      left: 50px;
+      left: 0;
       top: 0;
+      bottom: 0;
+      display: inline-flex;
+      margin-bottom: 0;
+    }
+
+    & img {
+      width: 100%;
     }
   }
 
   &__button {
     color: @font-color;
     display: block;
-    margin: 0 auto 50px auto;
-    padding: 15px 30px;
+    margin: 0 35px 35px 35px;
+    padding: 15px 15px;
     background: #ffffff;
     border: 2px solid #444444;
     box-shadow: none;
@@ -71,8 +102,11 @@
 
     @media (min-width: @tablet-width) {
       order: 4;
-      margin: 0;
-      margin-bottom: 60px;
+      margin: 0 40px 50px 40px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 0 0 50px 0;
     }
   }
 }

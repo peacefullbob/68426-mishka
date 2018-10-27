@@ -3,38 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Title</title>
+  <title>Вязание на заказ</title>
   <link href="../css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="header">
-  <nav class="main-nav">
+  <nav class="header__main-nav main-nav">
     <a href="/" class="header__logo">
-      <picture>
-        <source srcset="img/logo-desktop.svg" media="(min-width: 1024px)">
+      <picture class="header__logo-image">
+        <source srcset="img/logo-desktop.svg" media="(min-width: 1250px)">
         <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
-        <img src="img/logo-mobile.svg" alt="Магазин «Мишка»" class="header__logo-image">
+        <img src="img/logo-mobile.svg" alt="Магазин «Мишка»" >
       </picture>
     </a>
     <ul class="main-nav__site-list site-list">
       <li class="site-list__item"><a class="site-list__link" href="/catalog.html">Каталог товаров</a></li>
       <li class="site-list__item"><a class="site-list__link" href="/form.html">Вязание на заказ</a></li>
-      <li class="site-list__item"><a class="site-list__link" href="#">Новые поступления</a></li>
-      <li class="site-list__item"><a class="site-list__link" href="#">Распродажа</a></li>
     </ul>
     <ul class="main-nav__buttons-list buttons-list">
-      <li class="buttons-list__item buttons-list__item--search"><a class="buttons-list__link buttons-list__link--search" href="#">Поиск по
-        сайту</a></li>
+      <li class="buttons-list__item buttons-list__item--search"><a class="buttons-list__link buttons-list__link--search" href="#"><span>Поиск по
+        сайту</span></a></li>
       <li class="buttons-list__item buttons-list__item--basket"><a
-        class="buttons-list__link buttons-list__link--logo-basket" href="#">Корзина:
+        class="buttons-list__link buttons-list__link--basket" href="#">Корзина:
         пока пуста</a></li>
+    </ul>
+    <ul class="main-nav__submenu submenu">
+      <li class="submenu__item"><a href="#" class="submenu__link">Новые поступления</a></li>
+      <li class="submenu__item"><a href="#" class="submenu__link">Распродажа</a></li>
     </ul>
   </nav>
   <button class="header__nav-toggle"></button>
   <span class="header__text">Бесплатная доставка по России</span>
 </header>
 <main class="main">
-  <h1 class="page-title page-title--smart-bg">Вязание на заказ</h1>
+  <div class="main__page-title">
+    <h1 class="page-title page-title--smart-bg">Вязание на заказ</h1>
+    <div class="main__page-title-separator"><img src="img/bg-zigzag-fill.svg" alt=""></div>
+  </div>
   <section class="order">
     <p class="order__description">
       Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
@@ -43,17 +48,17 @@
     <form method="post" class="order__form form" action="https://echo.htmlacademy.ru">
       <fieldset class="form__group">
         <legend class="form__group-title">Тип</legend>
-        <label for="radio1"><input class="form__group-item form__group-item--radiobutton" checked id="radio1" type="radio">Аксессуар для интерьера</label>
-        <label for="radio2"><input class="form__group-item form__group-item--radiobutton" id="radio2" type="radio">Детская игрушка</label>
+        <label class="form__radio-label" for="radio1"><input class="form__group-item form__group-item--radio" checked id="radio1" type="radio"><span class="form__radio-mark"></span><span class="form__label-text">Аксессуар для интерьера</span></label>
+        <input class="form__group-item form__group-item--radio" id="radio2" type="radio"><label class="form__radio-label" for="radio2">Детская игрушка</label>
       </fieldset>
       <fieldset class="form__group">
         <legend class="form__group-title">Цвет</legend>
-        <label for="checkbox1"><input class="form__group-item form__group-item--checkbox" id="checkbox1" type="checkbox">Аксессуар для интерьера</label>
-        <label for="checkbox2"><input class="form__group-item form__group-item--checkbox" id="checkbox2" type="checkbox">Детская игрушка</label>
-        <label for="checkbox3"><input class="form__group-item form__group-item--checkbox" id="checkbox3" type="checkbox">Аксессуар для интерьера</label>
-        <label for="checkbox4"><input class="form__group-item form__group-item--checkbox" id="checkbox4" type="checkbox">Детская игрушка</label>
-        <label for="checkbox5"><input class="form__group-item form__group-item--checkbox" id="checkbox5" type="checkbox">Аксессуар для интерьера</label>
-        <label for="checkbox6"><input class="form__group-item form__group-item--checkbox" id="checkbox6" type="checkbox">Детская игрушка</label>
+        <input class="form__group-item form__group-item--checkbox" id="checkbox1" type="checkbox"><label class="form__checkbox-label" for="checkbox1">Аксессуар для интерьера</label>
+        <input class="form__group-item form__group-item--checkbox" id="checkbox2" type="checkbox"><label class="form__checkbox-label" for="checkbox2">Детская игрушка</label>
+        <label class="form__checkbox-label" for="checkbox3"><input class="form__group-item form__group-item--checkbox" id="checkbox3" type="checkbox">Аксессуар для интерьера</label>
+        <label class="form__checkbox-label" for="checkbox4"><input class="form__group-item form__group-item--checkbox" id="checkbox4" type="checkbox">Детская игрушка</label>
+        <label class="form__checkbox-label" for="checkbox5"><input class="form__group-item form__group-item--checkbox" id="checkbox5" type="checkbox">Аксессуар для интерьера</label>
+        <label class="form__checkbox-label" for="checkbox6"><input class="form__group-item form__group-item--checkbox" id="checkbox6" type="checkbox">Детская игрушка</label>
       </fieldset>
       <fieldset class="form__group">
         <legend class="form__group-title">ФИО</legend>
@@ -79,16 +84,16 @@
   </section>
 </main>
 <footer class="footer">
-  <a href="/" class="footer__logo">
+  <a href="/" class="footer__item footer__logo">
     <img src="img/logo-footer.svg" alt="Магазин «Мишка»" width="95" height="40" class="header__logo-image">
   </a>
-  <div class="footer__social social">
-    <div class="social__item social__item--insta"></div>
-    <div class="social__item social__item--fb"></div>
-    <div class="social__item social__item--tw"></div>
+  <div class="footer__item footer__social social">
+    <a href="#" title="Instagram" class="social__item social__item--insta"></a>
+    <a href="#" title="Facebook" class="social__item social__item--fb"></a>
+    <a href="#" title="Twitter" class="social__item social__item--tw"></a>
   </div>
-  <div class="footer__developers developers">Разработано <a class="developers__logo" title="HTML Academy: интерактивные онлайн-курсы по HTML, CSS и JavaScript" href="https://htmlacademy.ru/"><img
-    src="../img/logo-htmlacademy.svg" alt=""></a>
+  <div class="footer__item footer__developers developers">Разработано <a class="developers__logo" title="HTML Academy: интерактивные онлайн-курсы по HTML, CSS и JavaScript" href="https://htmlacademy.ru/"><img
+    class="developers__logo-image" src="../img/logo-htmlacademy.svg" alt="Лого HTML-academy"></a>
   </div>
 </footer>
 </body>
