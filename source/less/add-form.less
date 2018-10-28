@@ -1,3 +1,40 @@
 .add-form {
-  padding: 30px;
+  &__radio {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    display: block;
+  }
+
+  &__group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  &__radio:checked + .add-form__radio-mark {
+    border: 1px solid @main-color;
+  }
+
+  &__radio-mark {
+    display: block;
+    padding: 15px 30px;
+    border: 1px solid @grey-color;
+    cursor: pointer;
+  }
+
+  &__button {
+    border: 1px solid @main-color;
+    padding: 20px 80px;
+    background: @main-color;
+    color: @white;
+    text-transform: uppercase;
+    font-family: @font-bold;
+    font-size: @font-size + 2px;
+    line-height: @font-size + 1px;
+    cursor: pointer;
+  }
 }

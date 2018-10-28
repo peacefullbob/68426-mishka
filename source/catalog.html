@@ -116,9 +116,24 @@
     <a href="#" title="Facebook" class="social__item social__item--fb"></a>
     <a href="#" title="Twitter" class="social__item social__item--tw"></a>
   </div>
-  <div class="footer__item footer__developers developers">Разработано <a class="developers__logo" title="HTML Academy: интерактивные онлайн-курсы по HTML, CSS и JavaScript" href="https://htmlacademy.ru/"><img
+  <div class="footer__item footer__developers developers">Разработано <a class="developers__logo" title="HTML Academy: интерактивные онлайн-курсы по HTML, CSS и JavaScript" href="https://htmlacademy.ru/intensive/adaptive"><img
     class="developers__logo-image" src="../img/logo-htmlacademy.svg" alt="Лого HTML-academy"></a>
   </div>
 </footer>
+<section class="modal modal--fixed">
+  <div class="modal__wrapper">
+    <h1 class="modal__title">Добавить в корзину</h1>
+    <span class="add-form__text">Выберите размер:</span>
+    <form class="modal__form add-form">
+      <fildset class="add-form__group">
+        <label for="radio-s"><input name="size" class="add-form__radio" id="radio-s" type="radio"><span class="add-form__radio-mark">S</span></label>
+        <label for="radio-m"><input name="size" class="add-form__radio" id="radio-m" type="radio"><span class="add-form__radio-mark">M</span></label>
+        <label for="radio-l"><input name="size" class="add-form__radio" id="radio-l" type="radio"><span class="add-form__radio-mark">L</span></label>
+      </fildset>
+      <button class="add-form__button" type="submit">Добавить</button>
+    </form>
+  </div>
+</section>
+<script src="js/app.js" type="text/javascript"></script>
 </body>
 </html>

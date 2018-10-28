@@ -19,6 +19,18 @@
     padding: 24px 0 17px 0;
     border-bottom: 1px solid @grey-color;
 
+    :hover {
+      opacity: 0.7;
+    }
+
+    :active {
+      opacity: 0.5;
+    }
+
+    :focus {
+      opacity: 0.5;
+    }
+
     @media (min-width: @tablet-width) {
       border-bottom: none;
       padding-top: 20px;
@@ -55,12 +67,17 @@
 
   &__nav-toggle {
     position: absolute;
+    cursor: pointer;
     top: 30px;
     right: 30px;
     border: none;
     width: 22px;
     height: 22px;
-    background: url("../img/icon-menu-close.svg") no-repeat center;
+    background: url("../img/icon-menu-open.svg") no-repeat center;
+
+    &--opened {
+      background: url("../img/icon-menu-close.svg") no-repeat center;
+    }
 
     @media (min-width: @tablet-width) {
       display: none;
