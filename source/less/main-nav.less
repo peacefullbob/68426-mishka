@@ -5,17 +5,19 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__buttons-list {
     @media (min-width: @tablet-width) {
-      order: -1;
+      order: 2;
       display: flex;
       flex-direction: row;
     }
 
     @media (min-width: @desktop-width) {
-      order: 1;
+      order: 3;
     }
   }
 
@@ -25,11 +27,26 @@
       display: flex;
       position: absolute;
       left: 50px;
-      top: 110px;
+      top: 105px;
+      z-index: 1;
     }
 
     @media (min-width: @desktop-width) {
       position: static;
+      order: 1;
+    }
+  }
+
+  &__submenu {
+    display: none;
+
+    @media (min-width: @desktop-width) {
+      z-index: 1;
+      position: absolute;
+      top: 108px;
+      left: 100px;
+      display: flex;
+      color: @font-color;
     }
   }
 }

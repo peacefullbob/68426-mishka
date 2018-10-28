@@ -3,14 +3,25 @@
   font-size: @font-size + 4px;
   line-height: @font-size +3px;
   color: @title-color;
-  padding: 30px;
+  padding: 20px 30px 30px 35px;
+  display: flex;
+  justify-content: center;
 
   @media (min-width: @tablet-width) {
     padding: 0;
+    align-items: center;
     display: flex;
+    justify-content: flex-end;
   }
 
   &__logo {
     margin-left: 30px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__logo-image {
+    min-width: 30px;
+    height: 35px;
   }
 }
