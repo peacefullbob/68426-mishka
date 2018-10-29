@@ -137,6 +137,17 @@
     border: 2px solid @font-color;
     background: @white;
     cursor: pointer;
+    transition: 0.3s ease;
+
+    &:hover {
+      background: #444444;
+      color: @white;
+    }
+
+    &:focus {
+      background: #444444;
+      color: #7c7c7c;
+    }
 
     @media (min-width: @tablet-width) {
       padding: 15px 100px;

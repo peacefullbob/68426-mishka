@@ -34,14 +34,11 @@
     }
 
     &:hover path {
+      transition: 0.3s ease;
       fill: @main-color;
     }
 
-    &:focus {
-      opacity: 0.4;
-    }
-
-    @media (min-width: @desktop-width) {
+    @media (min-width: @tablet-width) {
       &--search {
         position: static;
       }
@@ -53,10 +50,32 @@
     line-height: @font-size + 9px;
     color: @title-color;
     position: relative;
+    transition: 0.3s ease;
 
-    &--search span {
-      @media (min-width: @tablet-width) {
-        display: none;
+    &:hover {
+      color: #666666;
+
+      path {
+        transition: 0.3s ease;
+        fill: @main-color;
+      }
+    }
+
+    &:focus {
+      opacity: 0.3;
+
+      path {
+        fill: @main-color;
+      }
+    }
+
+    &--search {
+      display: block;
+
+      span {
+        @media (min-width: @tablet-width) {
+          display: none;
+        }
       }
     }
   }

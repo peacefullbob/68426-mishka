@@ -1,6 +1,9 @@
 .buy-block {
   font-family: @font-bold;
   color: @title-color;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #f1f1f1;
 
   @media (min-width: @tablet-width) {
     font-size: @font-size + 2px;
@@ -8,12 +11,18 @@
 
   &__price {
     display: block;
-    margin-left: 25px;
-    padding-top: 20px;
+  }
 
-    @media (min-width: @tablet-width) {
-      margin-left: 0;
-      border-top: 1px solid @grey-color;
+  &__basket {
+    transition: 0.3s ease;
+
+    &:hover svg {
+      fill: @main-color;
+    }
+
+    &:focus svg {
+      opacity: 0.4;
+      fill: @main-color;
     }
   }
 }

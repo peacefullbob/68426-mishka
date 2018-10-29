@@ -11,6 +11,18 @@
     background: @white;
     border: 2px solid @font-color;
     box-shadow: none;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      background: #444444;
+      color: @white;
+    }
+
+    &:focus {
+      background: #444444;
+      color: #7c7c7c;
+    }
 
     @media (min-width: @tablet-width) {
       padding: 15px 40px;
@@ -53,6 +65,16 @@
     display: inline-block;
     border-bottom: 1px solid @main-color;
     color: @font-color;
+    transition: 0.3s ease;
+
+    &:hover {
+      color: @main-color;
+    }
+
+    &:focus {
+      color: @main-color;
+      opacity: 0.3;
+    }
   }
 
   &__table {
