@@ -1,8 +1,13 @@
 .product-item {
   border: 1px solid @grey-color;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+
+  &:hover .product-item__wrapper {
+    box-shadow: 0 0 20px rgba(232, 232, 232, 1);
+  }
+
+  &:focus .product-item__wrapper {
+    box-shadow: 0 0 10px rgba(232, 232, 232, 0.8);
+  }
 
   &__wrapper {
     padding: 23px 30px 30px 27px;

@@ -13,19 +13,14 @@
 
   &__product-item {
     margin-bottom: 30px;
-
-    &:hover .product-item__wrapper {
-      box-shadow: 0 0 20px rgba(232, 232, 232, 1);
-    }
-
-    &:focus .product-item__wrapper {
-      box-shadow: 0 0 10px rgba(232, 232, 232, 0.8);
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     @media (min-width: @tablet-width) {
       padding-bottom: 0;
       margin-bottom: 50px;
-      display: flex;
+      flex-direction: row;
     }
 
     @media (min-width: @desktop-width) {
