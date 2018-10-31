@@ -48,7 +48,7 @@
 </header>
 <main class="main">
   <div class="main__page-title">
-    <h1 class="page-title page-title--smart-bg">Вязание на заказ</h1>
+    <h1 class="page-title page-title--small-margin page-title--smart-bg">Вязание на заказ</h1>
     <div class="main__page-title-separator"><img src="img/bg-zigzag-fill.svg" alt=""></div>
   </div>
   <section class="order">
@@ -58,7 +58,7 @@
     </p>
     <form method="post" class="order__form form" action="https://echo.htmlacademy.ru">
       <fieldset class="form__group">
-        <legend class="form__group-title">Тип</legend>
+        <legend class="form__title-wrapper"><span class="form__group-title">Тип</span></legend>
         <label class="form__radio-label" for="radio1"><input class="form__group-item form__group-item--radio"
                                                              id="radio1" name="type" type="radio"><span
           class="form__radio-mark"></span><span class="form__label-text">Аксессуар для интерьера</span></label>
@@ -67,9 +67,9 @@
           class="form__radio-mark"></span><span class="form__label-text">Детская игрушка</span></label>
       </fieldset>
       <fieldset class="form__group form__group--two-column form__group--grey-color">
-        <div class="form__title-wrapper">
-          <legend class="form__group-title">Цвет</legend>
-        </div>
+        <legend  class="form__title-wrapper">
+          <span class="form__group-title">Цвет</span>
+        </legend>
         <label class="form__checkbox-label" for="checkbox1"><input class="form__group-item form__group-item--checkbox"
                                                                    id="checkbox1" type="checkbox"><span
           class="form__checkbox-mark"></span><span class="form__label-text">Белый</span></label>
@@ -90,9 +90,9 @@
           class="form__checkbox-mark"></span><span class="form__label-text">Оранжевый</span></label>
       </fieldset>
       <fieldset class="form__group">
-        <div class="form__title-wrapper">
-          <legend class="form__group-title">ФИО</legend>
-        </div>
+        <legend class="form__title-wrapper">
+          <span class="form__group-title">ФИО</span>
+        </legend>
         <label class="form__label-typetext" for="name1">Имя:<input class="form__group-item form__group-item--text"
                                                                    required placeholder="Введите ваше имя*" id="name1"
                                                                    type="text"></label>
@@ -104,24 +104,24 @@
                                                                         type="text"></label>
       </fieldset>
       <fieldset class="form__group form__group--grey-color form__group--phone">
-        <div class="form__title-wrapper form__title-wrapper--small-margin">
-          <legend class="form__group-title">Тел</legend>
-        </div>
+        <legend class="form__title-wrapper">
+          <span class="form__group-title form__group-title--small-margin">Тел</span>
+        </legend>
         <label class="form__label-typetext" for="phone"><input class="form__group-item form__group-item--phone" required
                                                                placeholder="+7 ХХХ ХХХ ХХ ХХ*" id="phone"
                                                                type="text"></label>
       </fieldset>
       <fieldset class="form__group form__group--grey-color form__group--mail">
-        <div class="form__title-wrapper form__title-wrapper--medium-margin">
-          <legend class="form__group-title">E-mail</legend>
-        </div>
+        <legend class="form__title-wrapper form__title-wrapper--medium-margin">
+          <span class="form__group-title form__group-title--medium-margin">E-mail</span>
+        </legend>
         <label class="form__label-typetext" for="email"><input class="form__group-item form__group-item--email" required
                                                                placeholder="Ваш Email*" id="email" type="text"></label>
       </fieldset>
       <fieldset class="form__group ">
-        <div class="form__title-wrapper form__title-wrapper--medium-margin">
-          <legend class="form__group-title">Доп</legend>
-        </div>
+        <legend class="form__title-wrapper form__title-wrapper--medium-margin">
+          <span class="form__group-title form__group-title--medium-margin">Доп</span>
+        </legend>
         <label class="form__textarea-label" for="message"><textarea class="form__group-item form__group-item--message"
                                                                     placeholder="Опишите все ваши пожелания к заказу"
                                                                     id="message"></textarea></label>

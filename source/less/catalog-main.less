@@ -16,11 +16,11 @@
       flex-direction: row;
       margin-top: -125px;
       padding: 0 50px;
-      margin-bottom: 40px;
+      margin-bottom: 35px;
     }
 
     @media (min-width: @desktop-width) {
-      margin-bottom: 120px;
+      margin-bottom: 114px;
       padding: 0 100px;
     }
   }
@@ -64,6 +64,11 @@
     background: #63d1bb;
     transition: 0.2s ease;
 
+    @media (min-width: @tablet-width) {
+      font-size: @font-size + 5px;
+      line-height: @font-size + 15px;
+    }
+
     &::after {
       content: "";
       display: block;
@@ -72,6 +77,11 @@
       right: 23px;
       width: 70px;
       height: 70px;
+
+      @media (min-width: @desktop-width) {
+        top: 26px;
+        right: 28px;
+      }
     }
 
     &:hover {
