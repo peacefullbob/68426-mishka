@@ -4,24 +4,31 @@
   line-height: @font-size + 7px;
 
   &__buttons-list {
+    display: none;
+
     &--nojs {
-      display: none;
+      display: block;
     }
 
     @media (min-width: @tablet-width) {
+      width: 52%;
       order: 2;
       display: flex;
       flex-direction: row;
+      justify-content: flex-end;
     }
 
     @media (min-width: @desktop-width) {
+      width: 34%;
       order: 3;
     }
   }
 
   &__site-list {
+    display: none;
+
     &--nojs {
-      display: none;
+      display: block;
     }
 
     @media (min-width: @tablet-width) {
@@ -34,6 +41,7 @@
     }
 
     @media (min-width: @desktop-width) {
+      width: 36%;
       position: static;
       order: 1;
     }
