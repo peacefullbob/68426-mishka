@@ -3,14 +3,10 @@
   font-size: @font-size + 2px;
   line-height: @font-size + 7px;
 
-  @media (min-width: @tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
   &__buttons-list {
-    display: none;
+    &--nojs {
+      display: none;
+    }
 
     @media (min-width: @tablet-width) {
       order: 2;
@@ -24,7 +20,9 @@
   }
 
   &__site-list {
-    display: none;
+    &--nojs {
+      display: none;
+    }
 
     @media (min-width: @tablet-width) {
       padding: 0;

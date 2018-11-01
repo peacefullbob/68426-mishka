@@ -1,10 +1,4 @@
 .main {
-  min-width: 320px;
-
-  @media (min-width: @tablet-width) {
-    max-width: inherit;
-  }
-
   &__page-title-wrapper {
     background-color: #f9f9f9;
     height: 480px;
@@ -81,26 +75,33 @@
   }
 
   &__week-offer {
+    padding: 0 30px;
+    position: relative;
     margin-bottom: 25px;
 
     @media (min-width: @tablet-width) {
+      padding: 0 50px;
       margin-bottom: 50px;
     }
 
     @media (min-width: @desktop-width) {
+      padding: 0 100px 50px 100px;
       margin-bottom: 25px;
     }
   }
 
   &__features {
+    padding: 0 30px;
     margin-top: 21px;
 
     @media (min-width: @tablet-width) {
       margin-top: 45px;
+      padding: 0 50px;
     }
 
     @media (min-width: @desktop-width) {
       margin-top: 57px;
+      padding: 0 275px;
     }
   }
 
@@ -129,14 +130,42 @@
     @media (min-width: @desktop-width) {
       margin-top: 138px;
       margin-bottom: 100px;
+      padding: 0 100px;
+      position: relative;
     }
   }
 
   &__video {
+    padding: 0 30px;
     margin-bottom: 55px;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+      flex-direction: column;
+      padding: 0 50px;
+    }
 
     @media (min-width: @desktop-width) {
       margin: 0 100px 100px 100px;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      padding: 0;
+    }
+  }
+
+  &__catalog-wrapper {
+    padding: 0 30px;
+
+    @media (min-width: @tablet-width) {
+      padding: 0 50px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 0 100px;
+      display: flex;
+      justify-content: space-between;
     }
   }
 }

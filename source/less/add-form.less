@@ -7,6 +7,11 @@
   &__text {
     margin-bottom: 30px;
     display: block;
+
+    @media (min-width: @tablet-width) {
+      font-size: @font-size + 2px;
+      line-height: @font-size + 15px;
+    }
   }
 
   &__group {
@@ -24,6 +29,12 @@
     padding: 15px 30px;
     border: 1px solid @grey-color;
     cursor: pointer;
+
+    @media (min-width: @tablet-width) {
+      font-size: @font-size + 2px;
+      line-height: @font-size + 1px;
+      padding: 15px 45px;
+    }
   }
 
   &__button {
