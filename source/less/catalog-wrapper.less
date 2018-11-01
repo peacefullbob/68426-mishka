@@ -12,17 +12,19 @@
   }
 
   &__product-item {
-    margin-bottom: 30px;
-    padding-bottom: 30px;
+    margin-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     @media (min-width: @tablet-width) {
       padding-bottom: 0;
       margin-bottom: 50px;
-      display: flex;
+      flex-direction: row;
     }
 
     @media (min-width: @desktop-width) {
-      display: block;
+      flex-direction: column;
     }
   }
 }

@@ -2,6 +2,8 @@
   padding: 0 30px;
 
   @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
     padding: 0 50px;
   }
 
@@ -10,17 +12,10 @@
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-    border: 1px solid @grey-color;
+    padding: 0;
   }
 
   &__wrapper {
-    border: 1px solid @grey-color;
-
-    @media (min-width: @tablet-width) {
-      display: flex;
-      flex-direction: column;
-    }
-
     @media (min-width: @desktop-width) {
       display: block;
       width: 235px;
@@ -28,85 +23,146 @@
     }
   }
 
-  &__title {
-    padding-top: 30px;
-    font-size: @font-size + 2px;
-    line-height: @font-size + 9px;
-    margin-left: 90px;
-    margin-bottom: 30px;
-
-    @media (min-width: @tablet-width) {
-      order: 2;
-      font-size: @font-size + 5px;
-      line-height: @font-size + 9px;
-      margin-left: 107px;
-      margin-bottom: 33px;
-    }
+  &__icon {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
 
     @media (min-width: @desktop-width) {
-      margin-left: 0;
-      margin-bottom: 30px;
-      margin-top: 60px;
+      margin-right: 0;
+      margin-bottom: 20px;
     }
   }
 
-  &__description {
-    font-size: @font-size - 2px;
-    padding: 0 40px 25px 35px;
-
-    @media (min-width: @tablet-width) {
-      order: 3;
-      font-size: @font-size;
-      line-height: @font-size + 15px;
-      margin-bottom: 10px;
-      padding: 0 40px 25px 40px;
-    }
-
-    @media (min-width: @desktop-width) {
-      margin-bottom: 55px;
-      padding: 0;
-    }
-  }
-
-  &__image {
-    display: block;
-    margin-bottom: 5px;
-
-    @media (min-width: @tablet-width) {
-      order: 1;
-    }
+  &__item {
+    position: relative;
 
     @media (min-width: @desktop-width) {
       position: absolute;
       left: 0;
       top: 0;
       bottom: 0;
-      display: inline-flex;
+      overflow: hidden;
+      width: 65%;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    & svg {
+      transition: 0.3s ease;
+      width: 100%;
+    }
+
+    &:hover svg {
+      transform: scale(1.2);
+    }
+
+    &:focus svg {
+      transform: scale(0.8);
+    }
+  }
+
+  &__title {
+    font-size: @font-size + 2px;
+    line-height: @font-size + 9px;
+    display: flex;
+    padding: 22px 30px 30px 30px;
+    border: 1px solid @grey-color;
+
+    @media (min-width: @tablet-width) {
+      order: 2;
+      padding: 42px 30px 5px 45px;
+      font-size: @font-size + 5px;
+      line-height: @font-size + 9px;
+      border-top: 1px solid @grey-color;
+      border-left: 1px solid @grey-color;
+      border-right: 1px solid @grey-color;
+      border-bottom: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 45px 7% 0 7%;
+      width: 21%;
+      flex-direction: column;
+    }
+  }
+
+  &__description {
+    font-size: @font-size - 2px;
+    padding: 20px 32px 35px 35px;
+    border: 1px solid @grey-color;
+
+    @media (min-width: @tablet-width) {
+      order: 3;
+      font-size: @font-size;
+      line-height: @font-size + 15px;
+      margin-bottom: 10px;
+      padding: 20px 40px 40px 40px;
+      border-top: none;
+      border-left: 1px solid @grey-color;
+      border-right: 1px solid @grey-color;
+      border-bottom: 1px solid @grey-color;
+    }
+
+    @media (min-width: @desktop-width) {
       margin-bottom: 0;
+      padding: 35px 6% 0 7%;
+      width: 22%;
+    }
+  }
+
+  &__description-text {
+    margin-bottom: 25px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 35px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 45px;
+    }
+  }
+
+  &__image {
+    display: block;
+
+    @media (min-width: @tablet-width) {
+      order: 1;
     }
 
     & img {
       width: 100%;
+      display: block;
     }
   }
 
   &__button {
     color: @font-color;
     display: block;
-    margin: 0 35px 35px 35px;
     padding: 15px 15px;
     background: #ffffff;
     border: 2px solid #444444;
     box-shadow: none;
     text-align: center;
+    transition: 0.3s ease;
 
-    @media (min-width: @tablet-width) {
-      order: 4;
-      margin: 0 40px 50px 40px;
+    &:hover {
+      background: #444444;
+      color: @white;
+    }
+
+    &:focus {
+      background: #444444;
+      color: #7c7c7c;
     }
 
     @media (min-width: @desktop-width) {
-      margin: 0 0 50px 0;
+      margin: 0 0 60px 0;
     }
   }
 }

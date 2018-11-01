@@ -13,13 +13,38 @@
 
     &--basket {
       @media (min-width: @tablet-width) {
-        padding: 30px 0 30px 84px;
+        padding: 30px 0 30px 86px;
+      }
+
+      @media (min-width: @desktop-width) {
+        padding-left: 90px;
       }
     }
 
     &--search {
       @media (min-width: @tablet-width) {
-        padding: 35px 30px 30px 30px;
+        padding: 33px 30px 25px 30px;
+      }
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    left: -55px;
+    top: 3px;
+
+    & path {
+      fill: #d3d2d2;
+    }
+
+    &:hover path {
+      transition: 0.3s ease;
+      fill: @main-color;
+    }
+
+    @media (min-width: @tablet-width) {
+      &--search {
+        position: static;
       }
     }
   }
@@ -29,40 +54,32 @@
     line-height: @font-size + 9px;
     color: @title-color;
     position: relative;
+    transition: 0.3s ease;
 
-    &--search span {
-      @media (min-width: @tablet-width) {
-        display: none;
+    &:hover {
+      color: #666666;
+
+      path {
+        transition: 0.3s ease;
+        fill: @main-color;
       }
     }
 
-    &--search::before {
-      content: "";
-      display: block;
-      position: absolute;
-      left: -44px;
-      top: 3px;
-      width: 20px;
-      height: 20px;
-      background: url("../img/icon-search.svg") no-repeat center;
+    &:focus {
+      opacity: 0.3;
 
-      @media (min-width: @tablet-width) {
-        position: static;
+      path {
+        fill: @main-color;
       }
     }
 
-    &--basket::before {
-      content: "";
+    &--search {
       display: block;
-      position: absolute;
-      left: -44px;
-      top: 3px;
-      width: 20px;
-      height: 20px;
-      background: url("../img/icon-cart.svg") no-repeat center;
 
-      @media (min-width: @tablet-width) {
-        left: -48px;
+      span {
+        @media (min-width: @tablet-width) {
+          display: none;
+        }
       }
     }
   }

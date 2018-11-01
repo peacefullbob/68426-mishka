@@ -3,21 +3,27 @@
   font-size: @font-size + 4px;
   line-height: @font-size +3px;
   color: @title-color;
-  padding: 20px 30px 30px 35px;
-  display: flex;
-  justify-content: center;
 
-  @media (min-width: @tablet-width) {
-    padding: 0;
-    align-items: center;
-    display: flex;
-    justify-content: flex-end;
+  &:hover svg {
+    fill: #46c1ae;
+  }
+
+  &:focus {
+    color: #a8a8a8;
+
+    & svg {
+      fill: #bde3dd;
+    }
   }
 
   &__logo {
     margin-left: 30px;
     display: inline-block;
     vertical-align: middle;
+
+    & svg {
+      transition: 0.3s ease;
+    }
   }
 
   &__logo-image {

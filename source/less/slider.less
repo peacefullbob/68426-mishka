@@ -14,16 +14,22 @@
     border-top: 1px solid @grey-color;
     border-bottom: 1px solid @grey-color;
     border-left: 1px solid @grey-color;
+    cursor: pointer;
+    transition: 0.3s ease;
 
-    @media (min-width: @tablet-width) {
-      padding: 25px 50px;
+    &:hover {
+      opacity: 0.6;
     }
 
-    @media (min-width: @desktop-width) {
+    &:focus {
+      opacity: 0.3;
+    }
+
+    @media (min-width: @tablet-width) {
       border: none;
-      padding: 0;
       width: 87px;
       height: 50px;
+      padding: 0;
     }
 
     &--prev {
@@ -34,7 +40,7 @@
       background: url("../img/icon-right-arrow.svg") no-repeat center;
       border-right: 1px solid @grey-color;
 
-      @media (min-width: @desktop-width) {
+      @media (min-width: @tablet-width) {
         border-right: none;
       }
     }

@@ -27,22 +27,44 @@
       padding: 0;
     }
 
-    & img {
+    & svg {
       width: 100px;
       height: 40px;
+      transition: 0.3s ease;
+    }
+
+    &:hover svg {
+      fill: @main-color;
+    }
+
+    &:focus svg {
+      fill: #bde3dd;
     }
   }
 
   &__social {
     display: flex;
     justify-content: center;
-    padding: 24px 30px 30px 30px;
+    padding: 30px 30px 20px 30px;
     border-bottom: 1px solid #e5e5e5;
 
     @media (min-width: @tablet-width) {
       padding: 0;
       align-items: center;
       border-bottom: none;
+    }
+  }
+
+  &__developers {
+    padding: 25px 30px 30px 35px;
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: @tablet-width) {
+      padding: 0;
+      align-items: center;
+      display: flex;
+      justify-content: flex-end;
     }
   }
 }
