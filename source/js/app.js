@@ -1,3 +1,5 @@
+document.querySelector(".main-nav__site-list").classList.remove('main-nav--nojs');
+document.querySelector(".main-nav__buttons-list").classList.remove('main-nav--nojs');
 document.querySelector(".header__nav-toggle").onclick = function () {
   if (document.querySelector(".header__nav-toggle--opened")) {
     this.classList.remove("header__nav-toggle--opened");
@@ -10,7 +12,7 @@ document.querySelector(".header__nav-toggle").onclick = function () {
   }
 }
 
-document.querySelector(".week-offer__button").onclick = function () {
+document.querySelector(".button--buy").onclick = function () {
   document.querySelector(".modal--fixed").style.display = "flex";
   document.querySelector("add-form__button").style.display = "none"
 }

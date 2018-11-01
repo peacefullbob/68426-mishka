@@ -85,8 +85,10 @@
     }
 
     &:hover {
-      transition: 0.2s ease;
-      transform: translate(0, -5px);
+      @media (min-width: @tablet-width) {
+        transition: 0.2s ease;
+        transform: translate(0, -5px);
+      }
     }
 
     &:focus .catalog-main__item {
