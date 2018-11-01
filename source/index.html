@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Главная</title>
-  <link href="css/style.css" rel="stylesheet">
+  <script src="js/pictureFill.min.js" async=""></script>
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
 <div style="display:none">
@@ -12,13 +13,13 @@
 </div>
 <header class="header">
   <nav class="header__main-nav main-nav">
-    <a href="/" class="header__logo">
-      <picture class="header__logo-image">
-        <source srcset="img/logo-desktop.svg" media="(min-width: 1250px)">
-        <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
-        <img src="img/logo-mobile.svg" alt="Магазин «Мишка»">
-      </picture>
-    </a>
+    <div class="header__logo">
+    <picture class="header__logo-image">
+      <source srcset="img/logo-desktop.svg" media="(min-width: 1250px)">
+      <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+      <img src="img/logo-mobile.svg" alt="Магазин «Мишка»">
+    </picture>
+  </div>
     <ul class="main-nav__site-list main-nav__site-list--nojs site-list">
       <li class="site-list__item"><a class="site-list__link" href="/catalog.html">Каталог товаров</a></li>
       <li class="site-list__item"><a class="site-list__link" href="/form.html">Вязание на заказ</a></li>
@@ -60,7 +61,6 @@
       <a href="#" class="catalog-main__link catalog-main__link--icon-lego"><div class="catalog-main__item">Детские<br>
         игрушки</div></a>
     </div>
-    <div class="catalog-main__separator"><img src="img/bg-zigzag-fill.svg" alt="zigzag"></div>
   </div>
   <section class="main__week-offer week-offer">
     <div class="week-offer__title-wrapper">
@@ -136,15 +136,14 @@
     </div>
     <button class="button feedback__button">Написать</button>
   </section>
-</main>
-<div class="main__separator">
-  <img alt="zigzag-line" src="img/bg-zigzag-line.svg">
-</div>
-<section class="main__contact contact">
-  <div class="contact__wrapper">
-    <h3 class="contact__title">Контакты</h3>
-    <table class="contact__table">
-      <tbody class="contact__table-body">
+  <div class="main__separator">
+    <img alt="zigzag-line" src="img/bg-zigzag-line.svg">
+  </div>
+  <section class="main__contact contact">
+    <div class="contact__wrapper">
+      <h3 class="contact__title">Контакты</h3>
+      <table class="contact__table">
+        <tbody class="contact__table-body">
         <tr class="contact__table-row">
           <td class="contact__table-cell">e-mail:</td>
           <td class="contact__table-cell"><a class="contact__mail-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
@@ -156,14 +155,15 @@
             д. 19/8, офис 101
           </td>
         </tr>
-      </tbody>
-    </table>
-    <div class="contact__map" id="map">
-      <div class="contact__map-marker"></div>
+        </tbody>
+      </table>
+      <div class="contact__map" id="map">
+        <div class="contact__map-marker"></div>
+      </div>
+      <a href="#" class="button contact__button">Напишите нам</a>
     </div>
-    <button class="button contact__button">Напишите нам</button>
-  </div>
-</section>
+  </section>
+</main>
 <footer class="footer">
   <div class="footer__wrapper">
   <a href="/" class="footer__item footer__logo">
@@ -220,7 +220,7 @@
 <section class="modal modal--fixed">
 <div class="modal__wrapper">
   <h1 class="modal__title">Добавить в корзину</h1>
-  <span class="add-form__text">Выберите размер:</span>
+  <span class="modal__text">Выберите размер:</span>
   <form class="modal__form add-form">
     <div class="add-form__group">
       <label for="radio-s"><input name="size" class="add-form__radio" id="radio-s" type="radio"><span class="add-form__radio-mark">S</span></label>

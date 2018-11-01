@@ -14,12 +14,15 @@
     }
 
     @media (min-width: @tablet-width) {
+      width: 48%;
+      text-align: left;
       border-bottom: none;
       padding-top: 20px;
       order: 1;
     }
 
     @media (min-width: @desktop-width) {
+      width: 30%;
       order: 2;
       padding-top: 30px;
     }
@@ -71,6 +74,11 @@
     width: 22px;
     height: 22px;
     background: url("../img/icon-menu-open.svg") no-repeat center;
+    display: none;
+
+    &--nojs {
+      display: block;
+    }
 
     &--opened {
       background: url("../img/icon-menu-close.svg") no-repeat center;

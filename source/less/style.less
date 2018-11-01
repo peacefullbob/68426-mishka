@@ -2,16 +2,17 @@
   font-weight: normal;
   font-family: "Open Sans";
   font-style: normal;
-  src: url("../fonts/opensans.woff") format("woff");
+
   src: url("../fonts/opensans.woff2") format("woff2");
+  src: url("../fonts/opensans.woff") format("woff");
 }
 
 @font-face {
   font-weight: bold;
   font-family: "Open Sans Bold";
   font-style: normal;
-  src: url("../fonts/opensansbold.woff") format("woff");
   src: url("../fonts/opensansbold.woff2") format("woff2");
+  src: url("../fonts/opensansbold.woff") format("woff");
 }
 
 body {
@@ -41,6 +42,7 @@ p {
   margin: 0;
 }
 
+@import "normalize";
 @import "variables";
 @import "mixins";
 @import "header";

@@ -4,6 +4,7 @@
     margin: 0 auto 40px auto;
     padding: 15px 55px;
     background: @white;
+    color: @font-color;
     border: 2px solid @font-color;
     box-shadow: none;
     transition: 0.3s ease;
@@ -34,7 +35,7 @@
     font-size: @font-size + 3px;
     line-height: @font-size + 15px;
     margin-bottom: 22px;
-    position: relative;
+    align-self: flex-start;
 
     @media (min-width: @tablet-width) {
       font-size: @font-size + 28px;
@@ -58,6 +59,7 @@
       font-size: @font-size + 38px;
       line-height: @font-size + 42px;
       padding: 0;
+      position: relative;
 
       &::after {
         left: -112px;
@@ -67,7 +69,13 @@
   }
 
   &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
     @media (min-width: @desktop-width) {
+      position: static;
       width: 330px;
       margin-left: 170px;
     }
@@ -92,6 +100,7 @@
   &__table {
     padding: 0 0 0 30px;
     margin-bottom: 10px;
+    align-self: flex-start;
 
     @media (min-width: @tablet-width) {
       font-size: @font-size + 2px;
@@ -150,7 +159,7 @@
     @media (min-width: @desktop-width) {
       position: absolute;
       right: 100px;
-      top: -70px;
+      top: -62px;
       width: 40%;
     }
   }
