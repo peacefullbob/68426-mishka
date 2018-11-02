@@ -1,8 +1,13 @@
 .order {
+  padding: 0 30px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+
   &__description {
     font-size: @font-size - 2px;
     margin-bottom: 25px;
-    padding: 0 30px;
 
     @media (min-width: @tablet-width) {
       font-size: @font-size + 2px;
@@ -18,12 +23,10 @@
   }
 
   &__form {
-    padding: 0 30px;
     margin-bottom: 60px;
 
     @media (min-width: @tablet-width) {
       margin-bottom: 55px;
-      padding: 0;
     }
   }
 }

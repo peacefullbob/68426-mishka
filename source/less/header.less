@@ -1,4 +1,18 @@
 .header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 50px;
+    border-bottom: 1px solid @grey-color;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 90px;
+    padding: 0 100px;
+  }
+
   &__logo {
     display: block;
     text-align: center;
@@ -26,22 +40,8 @@
   }
 
   &__main-nav {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-
-    @media (min-width: @tablet-width) {
-      flex-direction: row;
-      padding: 0 50px;
-      border-bottom: 1px solid @grey-color;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
     @media (min-width: @desktop-width) {
       height: 90px;
-      padding: 0 100px;
     }
   }
 
