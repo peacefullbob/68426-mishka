@@ -3,6 +3,11 @@
     position: relative;
   }
 
+  &__icon {
+    position: absolute;
+    right: 10px;
+  }
+
   &__group {
     padding: 0;
     font-family: @font-bold;
@@ -102,6 +107,8 @@
     position: relative;
     cursor: pointer;
     margin-bottom: 23px;
+    display: flex;
+    align-items: center;
 
     @media (min-width: @tablet-width) {
       margin-bottom: 58px;
@@ -112,6 +119,8 @@
     position: relative;
     cursor: pointer;
     margin-bottom: 43px;
+    display: flex;
+    align-items: center;
 
     &:last-child {
       margin-bottom: 20px;
@@ -120,6 +129,10 @@
     @media (min-width: @tablet-width) {
       width: 50%;
       margin-bottom: 58px;
+
+      &:last-child {
+        margin-bottom: 60px;
+      }
     }
 
     @media (min-width: @desktop-width) {
@@ -135,8 +148,6 @@
     border: 2px solid @font-color;
     border-radius: 50%;
     cursor: pointer;
-    position: absolute;
-    top: -10px;
     z-index: 1;
     transition: 0.3s ease;
 
@@ -151,7 +162,6 @@
     @media (min-width: @tablet-width) {
       width: 50px;
       height: 50px;
-      top: -17px;
     }
   }
 
@@ -161,8 +171,6 @@
     background: #ffffff;
     border: 2px solid @font-color;
     cursor: pointer;
-    position: absolute;
-    top: -10px;
     z-index: 1;
     transition: 0.3s ease;
 
@@ -178,24 +186,25 @@
       background: none;
       width: 50px;
       height: 50px;
-      top: -17px;
     }
   }
 
   &__label-text {
     display: block;
-    padding-left: 63px;
+    padding-left: 23px;
+    max-width: 160px;
 
     @media (min-width: @tablet-width) {
-      padding-left: 83px;
+      padding-left: 40px;
+      max-width: none;
     }
   }
 
   &__group-item--radio:checked + .form__radio-mark::after {
     content: "";
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 12px;
+    left: 12px;
     width: 15px;
     height: 15px;
     background: @main-color;
@@ -203,8 +212,8 @@
     display: block;
 
     @media (min-width: @tablet-width) {
-      top: 15px;
-      left: 16px;
+      top: 16px;
+      left: 17px;
       width: 20px;
       height: 20px;
     }
@@ -213,8 +222,8 @@
   &__group-item--checkbox:checked + .form__checkbox-mark::after {
     content: "";
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 7px;
+    left: 7px;
     width: 25px;
     height: 25px;
     background: url("../img/icon-tick.svg") no-repeat center;
@@ -260,10 +269,18 @@
 
       &:hover {
         border-bottom: 2px solid @main-color;
+
+        & + .form__icon {
+          fill: @main-color;
+        }
       }
 
       &:focus {
         border-bottom: 2px solid @main-color;
+
+        & + .form__icon {
+          fill: @main-color;
+        }
       }
 
       @media (min-width: @tablet-width) {
@@ -367,46 +384,17 @@
   }
 
   &__label-typetext {
-    line-height: @font-size - 8px;
+    line-height: @font-size + 3px;
     display: flex;
     flex-direction: column;
     margin-bottom: 24px;
 
     &--phone {
       position: relative;
-
-      &::after {
-        content: "";
-        display: block;
-        position: absolute;
-        right: 8px;
-        top: 5px;
-        width: 30px;
-        height: 30px;
-        background: url("../img/icon-phone.svg") no-repeat center;
-
-        @media (min-width: @tablet-width) {
-          right: 20px;
-        }
-      }
     }
 
     &--mail {
       position: relative;
-
-      &::after {
-        content: "";
-        display: block;
-        position: absolute;
-        right: 5px;
-        width: 40px;
-        height: 25px;
-        background: url("../img/icon-mail.svg") no-repeat center;
-
-        @media (min-width: @tablet-width) {
-          right: 15px;
-        }
-      }
     }
 
     &:last-child {

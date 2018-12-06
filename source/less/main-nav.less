@@ -42,6 +42,7 @@
   &__submenu {
     display: none;
 
+
     @media (min-width: @desktop-width) {
       z-index: 1;
       position: absolute;
@@ -49,6 +50,8 @@
       left: 100px;
       display: flex;
       color: @font-color;
+      max-width: 500px;
+      flex-wrap: wrap;
     }
   }
 }
